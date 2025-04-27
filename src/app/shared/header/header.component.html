@@ -1,11 +1,20 @@
 <header class="app-header">
-    <div class="header-left">
-      <h1>My App</h1>
-    </div>
-  
-    <div class="header-right">
-      <img [src]="user.profilePicture" alt="Profile" class="profile-pic">
+  <div class="header-left">
+    <h1>My App</h1>
+  </div>
+
+  <div class="header-right">
+   
+      <img 
+        [src]="user.profilePicture" 
+        (click)="toggleDropdown()" 
+        alt="Profile" 
+        class="profile-pic">
       <span>{{ user.name }}</span>
-    </div>
-  </header>
-  
+
+      <div *ngIf="isDropdownVisible" class="dropdown">
+        <a href="javascript:void(0);" (click)="logout()">Logout</a>
+      </div>
+   
+  </div>
+</header>
