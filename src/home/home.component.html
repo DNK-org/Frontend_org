@@ -1,0 +1,18 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData">
+        <td>{{ row.Id }}</td>
+        <td>{{ row.Name }}</td>
+        <td>{{ row.Email }}</td>
+        <td>{{ row.City }}</td>
+      </tr>
+    </tbody>
+  </table>

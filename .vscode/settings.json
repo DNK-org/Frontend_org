@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/35c13226-ccc4-49b4-9618-c5eea789a7fb/resourceGroups/WebApp/providers/Microsoft.Web/sites/AngularSSO",
+    "appService.deploySubpath": "dist\\azure-ui-test\\browser"
+}
